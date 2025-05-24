@@ -1,3 +1,4 @@
+package BSTTreesDictionary.TreesImplementation;
 public class RedBlackTree<T extends Comparable<T>> implements Tree<T> {
 
     private static final boolean RED = true;

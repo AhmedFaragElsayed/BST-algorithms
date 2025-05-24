@@ -1,3 +1,4 @@
+package BSTTreesDictionary.TreesImplementation;
 public interface Tree<T extends Comparable<T>> {
 
     boolean insert(T key);

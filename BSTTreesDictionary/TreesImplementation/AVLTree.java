@@ -1,3 +1,4 @@
+package BSTTreesDictionary.TreesImplementation;
 
 public class AVLTree<T extends Comparable<T>> implements Tree<T> {
     private class Node {
