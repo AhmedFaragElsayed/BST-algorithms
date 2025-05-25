@@ -25,6 +25,7 @@ replay_pid*
 
 # vscode configuration files
 .vscode/
+Build/
 
 # Commit message file
 commit.txt
