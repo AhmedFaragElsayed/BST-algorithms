@@ -1,11 +1,11 @@
-package BSTTreesDictionary.dictionary;
+package bstalgorithms.dictionary;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 
-import BSTTreesDictionary.TreesImplementation.*;
+import bstalgorithms.algorithms.*;
 
 
 

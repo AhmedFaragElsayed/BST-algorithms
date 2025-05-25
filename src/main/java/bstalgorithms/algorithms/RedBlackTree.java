@@ -1,4 +1,4 @@
-package BSTTreesDictionary.TreesImplementation;
+package bstalgorithms.algorithms;
 public class RedBlackTree<T extends Comparable<T>> implements Tree<T> {
 
     private static final boolean RED = true;
@@ -159,15 +159,27 @@ public class RedBlackTree<T extends Comparable<T>> implements Tree<T> {
     }
 
     private void fixAfterDeletion(Node x) {
-        while (x != root && getColor(x) == BLACK) {
+        while (x != null && x != root && getColor(x) == BLACK) {
             if (x == x.parent.left) {
                 Node w = x.parent.right;
+                // Add null check for w
+                if (w == null) {
+                    x = x.parent;
+                    continue;
+                }
+
                 if (getColor(w) == RED) {
                     w.color = BLACK;
                     x.parent.color = RED;
                     rotateLeft(x.parent);
                     w = x.parent.right;
+                    // Recheck after rotation
+                    if (w == null) {
+                        x = x.parent;
+                        continue;
+                    }
                 }
+
                 if (getColor(w.left) == BLACK && getColor(w.right) == BLACK) {
                     w.color = RED;
                     x = x.parent;
@@ -177,6 +189,11 @@ public class RedBlackTree<T extends Comparable<T>> implements Tree<T> {
                         w.color = RED;
                         rotateRight(w);
                         w = x.parent.right;
+                        // Recheck after rotation
+                        if (w == null) {
+                            x = x.parent;
+                            continue;
+                        }
                     }
                     w.color = x.parent.color;
                     x.parent.color = BLACK;
@@ -185,13 +202,25 @@ public class RedBlackTree<T extends Comparable<T>> implements Tree<T> {
                     x = root;
                 }
             } else {
+                // Same changes for the symmetrical case
                 Node w = x.parent.left;
+                if (w == null) {
+                    x = x.parent;
+                    continue;
+                }
+
                 if (getColor(w) == RED) {
                     w.color = BLACK;
                     x.parent.color = RED;
                     rotateRight(x.parent);
                     w = x.parent.left;
+                    // Recheck after rotation
+                    if (w == null) {
+                        x = x.parent;
+                        continue;
+                    }
                 }
+
                 if (getColor(w.right) == BLACK && getColor(w.left) == BLACK) {
                     w.color = RED;
                     x = x.parent;
@@ -201,6 +230,11 @@ public class RedBlackTree<T extends Comparable<T>> implements Tree<T> {
                         w.color = RED;
                         rotateLeft(w);
                         w = x.parent.left;
+                        // Recheck after rotation
+                        if (w == null) {
+                            x = x.parent;
+                            continue;
+                        }
                     }
                     w.color = x.parent.color;
                     x.parent.color = BLACK;
@@ -210,7 +244,7 @@ public class RedBlackTree<T extends Comparable<T>> implements Tree<T> {
                 }
             }
         }
-        if (x != null) x.color = BLACK;
+        if (x != null) x.color = BLACK; // Make sure x is not null before changing its color
     }
 
     private boolean getColor(Node node) {
@@ -259,5 +293,5 @@ public class RedBlackTree<T extends Comparable<T>> implements Tree<T> {
             printInorder(node.right);
         }
     }
-    
+
 }

@@ -1,9 +1,10 @@
-package BSTTreesDictionary.CLI;
-
-
+package bstalgorithms.CLI;
 import java.util.Scanner;
 
-import BSTTreesDictionary.dictionary.BSTTreesDictionary;
+import bstalgorithms.dictionary.BSTTreesDictionary;
+import bstalgorithms.utils.BSTTreesStatistics;
+
+
 
 
 public class DictionaryCLI {
@@ -16,7 +17,7 @@ public class DictionaryCLI {
         System.out.print("Choose backend type (avl / redblack): ");
         String type = scanner.nextLine().trim().toLowerCase();
 
-        
+
 
         dictionary = new BSTTreesDictionary(type);
         lastMessage = "Dictionary initialized with backend: " + type;
@@ -30,7 +31,7 @@ public class DictionaryCLI {
                 System.out.println(lastMessage);
             }
 
-            System.out.println("Choose Number from 1 to 6 for operation:");
+            System.out.println("Choose Number from 1 to 9 for operation:");
             System.out.println("1. insert");
             System.out.println("2. delete");
             System.out.println("3. search");
@@ -138,7 +139,7 @@ public class DictionaryCLI {
                     return;
 
                 case '9':
-                   //do statistics here
+                   BSTTreesStatistics.runStatistics();
                     break;
 
 

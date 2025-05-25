@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="bstalgorithms.BSTTreesUnitTest" time="0.113" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/moamen/Programming/Java_projects/BST/BST-algorithms/Build/test-classes:/home/moamen/Programming/Java_projects/BST/BST-algorithms/Build/classes:/home/moamen/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.3/log4j-core-2.24.3.jar:/home/moamen/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/home/moamen/.m2/repository/commons-io/commons-io/2.18.0/commons-io-2.18.0.jar:/home/moamen/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/moamen/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3.jar:/home/moamen/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/moamen/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/moamen/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/home/moamen/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar:/home/moamen/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.3/poi-ooxml-lite-5.2.3.jar:/home/moamen/.m2/repository/org/apache/xmlbeans/xmlbeans/5.1.1/xmlbeans-5.1.1.jar:/home/moamen/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/moamen/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/home/moamen/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/moamen/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/moamen/Programming/Java_projects/BST/BST-algorithms/Build/surefire/surefirebooter-20250525031154724_3.jar /home/moamen/Programming/Java_projects/BST/BST-algorithms/Build/surefire 2025-05-25T03-11-54_678-jvmRun1 surefire-20250525031154724_1tmp surefire_0-20250525031154724_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/moamen/Programming/Java_projects/BST/BST-algorithms/Build/test-classes:/home/moamen/Programming/Java_projects/BST/BST-algorithms/Build/classes:/home/moamen/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.3/log4j-core-2.24.3.jar:/home/moamen/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/home/moamen/.m2/repository/commons-io/commons-io/2.18.0/commons-io-2.18.0.jar:/home/moamen/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/moamen/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3.jar:/home/moamen/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/moamen/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/moamen/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/home/moamen/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar:/home/moamen/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.3/poi-ooxml-lite-5.2.3.jar:/home/moamen/.m2/repository/org/apache/xmlbeans/xmlbeans/5.1.1/xmlbeans-5.1.1.jar:/home/moamen/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/moamen/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/home/moamen/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/moamen/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/moamen"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/moamen/Programming/Java_projects/BST/BST-algorithms"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/moamen/Programming/Java_projects/BST/BST-algorithms/Build/surefire/surefirebooter-20250525031154724_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.7+6-Ubuntu-0ubuntu124.04"/>
+    <property name="user.name" value="moamen"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.11.0-26-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/moamen/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="/home/moamen/Programming/Java_projects/BST/BST-algorithms"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu::/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.7+6-Ubuntu-0ubuntu124.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testBigDataInsertion" classname="bstalgorithms.BSTTreesUnitTest" time="0.04">
+    <system-out><![CDATA[testBigDataInsertion
+Total Keys: 10000
+
+AVL Tree : 
+Insertion Time: 11.287913 ms
+Height: 14
+
+Red-Black Tree :
+Insertion Time: 4.559621 ms
+Height: 21
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testRandomizedInsertionOrder" classname="bstalgorithms.BSTTreesUnitTest" time="0.001">
+    <system-out><![CDATA[testRandomizedInsertionOrder
+Total Keys: 100
+
+AVL Tree : 
+Insertion Time: 0.159339 ms
+Height: 7
+
+Red-Black Tree :
+Insertion Time: 0.07115 ms
+Height: 7
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertDescendingKeys" classname="bstalgorithms.BSTTreesUnitTest" time="0.0">
+    <system-out><![CDATA[testInsertDescendingKeys
+Total Keys: 9
+
+AVL Tree : 
+Insertion Time: 0.005516 ms
+Height: 3
+
+Red-Black Tree :
+Insertion Time: 0.004253 ms
+Height: 3
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchExistingKeys" classname="bstalgorithms.BSTTreesUnitTest" time="0.0">
+    <system-out><![CDATA[testSearchExistingKeys
+Total Keys Searched: 7
+
+AVL Tree : 
+Search Time: 0.003009 ms
+Height: 2
+
+Red-Black Tree :
+Search Time: 0.002425 ms
+Height: 3
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteAllElementsReverse" classname="bstalgorithms.BSTTreesUnitTest" time="0.001">
+    <system-out><![CDATA[testDeleteAllElementsReverse
+Total Keys Deleted: 7
+
+AVL Tree : 
+Deletion Time: 0.012151 ms
+Height: -1
+
+Red-Black Tree :
+Deletion Time: 0.010777 ms
+Height: -1
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteFromEmptyTree" classname="bstalgorithms.BSTTreesUnitTest" time="0.002">
+    <system-out><![CDATA[testDeleteFromEmptyTree
+Total Keys Deleted: 5
+
+AVL Tree : 
+Deletion Time: 0.003178 ms
+Height: -1
+
+Red-Black Tree :
+Deletion Time: 0.002735 ms
+Height: -1
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertDuplicateStrings" classname="bstalgorithms.BSTTreesUnitTest" time="0.001">
+    <system-out><![CDATA[testInsertDuplicateStrings
+Total Keys: 15
+
+AVL Tree : 
+Insertion Time: 0.00441 ms
+Height: 0
+
+Red-Black Tree :
+Insertion Time: 0.003765 ms
+Height: 0
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testLongStringKeys" classname="bstalgorithms.BSTTreesUnitTest" time="0.002">
+    <system-out><![CDATA[testLongStringKeys
+Total Keys: 5
+
+AVL Tree : 
+Insertion Time: 0.004901 ms
+Height: 2
+
+Red-Black Tree :
+Insertion Time: 0.003645 ms
+Height: 2
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertAscendingKeys" classname="bstalgorithms.BSTTreesUnitTest" time="0.003">
+    <system-out><![CDATA[testInsertAscendingKeys
+Total Keys: 9
+
+AVL Tree : 
+Insertion Time: 0.007502 ms
+Height: 3
+
+Red-Black Tree :
+Insertion Time: 0.005057 ms
+Height: 3
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchOnEmptyTree" classname="bstalgorithms.BSTTreesUnitTest" time="0.001">
+    <system-out><![CDATA[testSearchOnEmptyTree
+Total Keys Searched for: 5
+
+AVL Tree : 
+Searching Time : 0.004049ms
+Height: -1
+
+Red-Black Tree :
+Searching Time : 0.00203ms
+Height: -1
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testRepeatedInsertionsAndDeletions" classname="bstalgorithms.BSTTreesUnitTest" time="0.005">
+    <system-out><![CDATA[testRepeatedInsertionsAndDeletions
+Total Keys: 5, Repetitions: 10
+
+AVL Tree : 
+Operation Time: 0.035281 ms
+Height: -1
+
+Red-Black Tree :
+Operation Time: 0.02278 ms
+Height: -1
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteNonExistentElements" classname="bstalgorithms.BSTTreesUnitTest" time="0.001">
+    <system-out><![CDATA[testDeleteNonExistentElements
+Total Non-Existent Keys Deleted: 8
+
+AVL Tree : 
+Deletion Time: 0.005858 ms
+Height: 3
+
+Red-Black Tree :
+Deletion Time: 0.00345 ms
+Height: 4
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testMixedInsertAndDelete" classname="bstalgorithms.BSTTreesUnitTest" time="0.004">
+    <system-out><![CDATA[testMixedInsertAndDelete
+Total Keys: 7, Keys Deleted: 3
+
+AVL Tree : 
+Deletion Time: 0.009494 ms
+Height: 2
+
+Red-Black Tree :
+Deletion Time: 0.009743 ms
+Height: 2
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertAlternatingKeys" classname="bstalgorithms.BSTTreesUnitTest" time="0.001">
+    <system-out><![CDATA[testInsertAlternatingKeys
+Total Keys: 9
+
+AVL Tree : 
+Insertion Time: 0.006268 ms
+Height: 3
+
+Red-Black Tree :
+Insertion Time: 0.035232 ms
+Height: 3
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testDoubleKeys" classname="bstalgorithms.BSTTreesUnitTest" time="0.003">
+    <system-out><![CDATA[testDoubleKeys
+Total Keys: 9
+
+AVL Tree : 
+Insertion Time: 0.012125 ms
+Height: 3
+
+Red-Black Tree :
+Insertion Time: 0.009525 ms
+Height: 3
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteAllElementsSequentially" classname="bstalgorithms.BSTTreesUnitTest" time="0.0">
+    <system-out><![CDATA[testDeleteAllElementsSequentially
+Total Keys Deleted: 7
+
+AVL Tree : 
+Deletion Time: 0.008424 ms
+Height: -1
+
+Red-Black Tree :
+Deletion Time: 0.005362 ms
+Height: -1
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertDeleteSearch" classname="bstalgorithms.BSTTreesUnitTest" time="0.006">
+    <system-out><![CDATA[testInsertDeleteSearch
+Total Keys: 7, Deleted: 2, Searched: 7
+
+AVL Tree : 
+Insertion Time: 0.004642 ms
+Deletion Time: 0.006472 ms
+Search Time: 0.002817 ms
+Height: 2
+
+Red-Black Tree :
+Insertion Time: 0.003665 ms
+Deletion Time: 0.004751 ms
+Search Time: 0.002578 ms
+Height: 3
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testVeryLargeDataSet" classname="bstalgorithms.BSTTreesUnitTest" time="0.01">
+    <system-out><![CDATA[testVeryLargeDataSet
+Total Keys: 1000
+
+AVL Tree : 
+Insertion Time: 1.907872 ms
+Height: 9
+
+Red-Black Tree :
+Insertion Time: 0.260344 ms
+Height: 16
+--------------------------------------------------
+
+]]></system-out>
+  </testcase>
+</testsuite>

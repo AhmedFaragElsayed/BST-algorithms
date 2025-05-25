@@ -1,6 +1,6 @@
-package BSTTreesDictionary.utils;
+package bstalgorithms;
 
-import BSTTreesDictionary.CLI.DictionaryCLI;
+import bstalgorithms.CLI.DictionaryCLI;
 
 public class Main
 {
